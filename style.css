@@ -2,20 +2,24 @@ body {
 	margin: 0;
 	font-family: 'Roboto', sans-serif;
 }
-#header__section {
+
+#header__section, main, #post__1 {
 	padding: 5% 8% 2% 8%;
+}
+#header__section {
 	background-color: #290742;
 }
 
-header {
+header, #header__options, #home, .hbox, #section__bottom {
 	display: flex;
 	justify-content: space-between;
+}
+
+	header {
 	align-items: center;
 }
 
 #header__options {
-	display: flex;
-	justify-content: space-between;
 	width: 440px;
 	margin-top: 16px;
 }
@@ -40,7 +44,7 @@ header h1 {
 header h1 span {
 	color: #4FFF4B;
 }
-button {
+button, a {
 	cursor: pointer;
 }
 #search {
@@ -52,7 +56,6 @@ button {
 #search input {
 	font-size: 18px;
 	padding: 20px;
-	width: 100%;
 	background-color: #170027;
 	border: none;
 	border-bottom-right-radius: 0;
@@ -72,7 +75,7 @@ button {
 	border: none;
 }
 
-#search button:hover {
+#search button:hover, a:hover {
 	opacity: .8;
 }
 header h1,
@@ -85,12 +88,6 @@ header h1,
 	opacity: 1;
 }
 
-#home>a {
-	height: 50%;
-	width: 90%;
-	position: absolute;
-}
-
 #home .vbox h1,#see-more a {
 	color: #9E6DC2;
 }
@@ -101,9 +98,6 @@ header h1,
 }
 
 #home {
-	display: flex;
-	width: 100%;
-	justify-content: space-between;
 	margin-top: 5%;
 }
 
@@ -123,7 +117,7 @@ header h1,
 #home__image {
 	width: 45%;
 }
-#home__image img {
+#home__image img, #home, #underline, #search input {
 	width: 100%;
 }
 
@@ -136,17 +130,7 @@ header h1,
 
 #underline {
 	background-color: #4FFF4B;
-	width: 100%;
 	height: 4px;
-}
-
-main {
-	padding: 5% 8% 2% 8%;
-}
-
-.hbox {
-	display: flex;
-	justify-content: space-between;
 }
 
 .hbox .vbox a p, .hbox .vbox a h1{
@@ -173,15 +157,7 @@ main {
 }
 
 #section__bottom {
-	padding: 5% 8% 2% 8%;
-	display: flex;
 	align-items: top;
-	justify-content: space-between;
-}
-
-.vbox a p {
-	margin-top: 0;
-	margin-bottom: 0;
 }
 
 #section__bottom .vbox {
@@ -192,9 +168,4 @@ main {
 a {
 	text-decoration: none;
 	color: black;
-	cursor: pointer;
-}
-
-a:hover {
-	opacity: .8;
 }
