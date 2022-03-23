@@ -3,7 +3,7 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
-#header__section, main, #post__1 {
+#header__section, main, #post__1, #section__bottom {
 	padding: 5% 8% 2% 8%;
 }
 #header__section {
